@@ -1,0 +1,44 @@
+.jumbotron{
+    background-image: url("../Images/Crystal_Background2.jpg");/*Currently in the Asset folder path written looks at the relative position of where the image is located, as such needed to write code to step out of the css folder in order to grab the image in the images folder.*/
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+
+}
+
+/* Sets the background image */
+body{
+ height: 100%;
+}
+
+.container{
+    height: 100%;
+    background-size:cover;
+}
+
+.crystals{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.crystal{
+    border: 1px solid grey;
+    height: 150px;
+    width: 150px;
+    border-radius: 4px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    transition: box-shadow .5s;
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+/* Causes the crystal image to stand out when the cursor is placed over it.  Also changes the mouse arrow to a pointer. */
+.crystal:hover{
+    box-shadow: 15px 15px 15px rgba(0,0,0,0.5);
+    transition: box-shadow .5s;
+    cursor: pointer;
+}

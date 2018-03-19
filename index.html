@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap CDN code (CDN = Content Delivery Network) -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="Assets/CSS/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <title>Crystal Collector</title>
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1>Crystal Collector</h1>
+    </div>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-6">
+                <h3>How to play the game</h3>
+                <ol>
+                    <li>The computer will choose a random number at the start of the game (aka Number to Get:)</li>
+                    <li>Using the Crystals
+                        <ul>
+                            <li>
+                                <img src="Assets/Images/BlueCrystal.jpg" alt="Blue Crystal" width=50px height=50px onclick="DoSomething()">Blue Crystal</li>
+                            <li>
+                                <img src="Assets/Images/RedCrystal.JPG" alt="Red Crystal" width=50px height=50px>Red Crystal</li>
+                            <li>
+                                <img src="Assets/Images/YellowCrystal.jpg" alt="Yellow Crystal" width=50px height=50px>Yellow Crystal</li>
+                            <li>
+                                <img src="Assets/Images/PurpleCrystal.jpg" alt="Purple Cyrstal" width=50px height=50px>Purple Crystal</li>
+                        </ul>
+                    </li>
+                    <li>You will attempt to match the "Number to Get" without going over</li>
+                    <li>If you match the "Number to Get", you win the game</li>
+                    <li>If you go over the "Number to Get", you lose the game</li>
+                    <li>The value of each crystal will not be determined until you click on it</li>
+                    <li>The game restarts whenever the player ("you") win or loss</li>
+                    <li>Are you ready to play? Let's GO!</li>
+                </ol>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h3 id="result">Number to achieve:</h3>
+                        <h3 id="Sum">Current Crystal Summation:</h3>
+                        <h3 id="Win">Wins:</h3>
+                        <h3 id="Loss">Losses:</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="crystals">
+            </div>
+        </div>
+</body>
+
+<script type="text/javascript" src="Assets/Javascript/game.js"></script>
+<footer>
+    
+</footer>
+
+</html>
